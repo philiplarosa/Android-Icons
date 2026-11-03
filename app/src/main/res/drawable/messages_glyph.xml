@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Glyph drawn on a 24x24 grid, scaled down to sit inside the adaptive icon safe zone. -->
+    <group android:pivotX="12" android:pivotY="12" android:scaleX="0.52" android:scaleY="0.52">
+        <path
+            android:pathData="M7,4h10a4,4 0 0,1 4,4v5a4,4 0 0,1 -4,4h-5l-5,3.5v-3.5a4,4 0 0,1 -4,-4v-5a4,4 0 0,1 4,-4Z"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M6.75,10.5a1.25,1.25 0 1,0 2.5,0a1.25,1.25 0 1,0 -2.5,0ZM10.75,10.5a1.25,1.25 0 1,0 2.5,0a1.25,1.25 0 1,0 -2.5,0ZM14.75,10.5a1.25,1.25 0 1,0 2.5,0a1.25,1.25 0 1,0 -2.5,0Z"
+            android:fillColor="#FFFFFF" />
+    </group>
+</vector>

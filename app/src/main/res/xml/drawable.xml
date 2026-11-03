@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Every icon Lawnchair shows in its icon picker.
+    drawable = file name in res/drawable (without .xml/.png)
+    name     = label shown inside this app
+-->
+<resources>
+    <version>1</version>
+    <category title="Apps" />
+    <item drawable="phone" name="Phone" />
+    <item drawable="messages" name="Messages" />
+    <item drawable="camera" name="Camera" />
+    <item drawable="chrome" name="Chrome" />
+    <item drawable="gmail" name="Gmail" />
+    <item drawable="maps" name="Maps" />
+    <item drawable="photos" name="Photos" />
+    <item drawable="youtube" name="YouTube" />
+    <item drawable="spotify" name="Spotify" />
+    <item drawable="settings" name="Settings" />
+</resources>
