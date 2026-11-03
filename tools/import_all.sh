@@ -12,3 +12,4 @@ python3 tools/import_art.py art/outlook.jpg  outlook  --size 30 --height 1.1 --m
 python3 tools/import_art.py art/whatsapp.jpg whatsapp --size 31 --shift 2 -1.5
 python3 tools/import_art.py art/nab.jpg      nab      --size 27 --center circle
 python3 tools/import_art.py art/claude.jpg   claude   --size 24 --center circle
+python3 tools/import_art.py art/renoho.jpg   renoho   --size 29

@@ -22,9 +22,9 @@ Open the Android Icons app to see which icons match an app on your phone (✓ me
 
 ## Included icons
 
-Phone, Messages, Camera, Chrome, Claude, Gmail, Outlook, Maps, NAB, Photos, YouTube, Settings, Spotify, WhatsApp.
+Phone, Messages, Camera, Chrome, Claude, Gmail, Outlook, Maps, NAB, Photos, RENOHO Health, YouTube, Settings, Spotify, WhatsApp.
 
-Spotify, Outlook, WhatsApp, NAB and Claude come from artwork in `art/`. The rest are vector glyphs.
+Spotify, Outlook, WhatsApp, NAB, Claude and RENOHO Health come from artwork in `art/`. RENOHO Health isn't in `appfilter.xml` yet (its component name isn't known), so pick it manually in Lawnchair for now. The rest are vector glyphs.
 
 `appfilter.xml` covers the Google, Samsung and stock Android versions of Phone, Messages and Camera. If an icon shows "No matching app found" in the app, your phone uses a different component name. You can still pick that icon manually, or add the right line (see below).
 

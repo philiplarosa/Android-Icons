@@ -17,6 +17,7 @@
     <item drawable="maps" name="Maps" />
     <item drawable="nab" name="NAB" />
     <item drawable="photos" name="Photos" />
+    <item drawable="renoho" name="RENOHO Health" />
     <item drawable="youtube" name="YouTube" />
     <item drawable="spotify" name="Spotify" />
     <item drawable="whatsapp" name="WhatsApp" />
