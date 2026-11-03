@@ -14,6 +14,7 @@
     <item drawable="gmail" name="Gmail" />
     <item drawable="outlook" name="Outlook" />
     <item drawable="maps" name="Maps" />
+    <item drawable="nab" name="NAB" />
     <item drawable="photos" name="Photos" />
     <item drawable="youtube" name="YouTube" />
     <item drawable="spotify" name="Spotify" />

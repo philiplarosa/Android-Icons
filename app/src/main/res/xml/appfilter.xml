@@ -35,6 +35,11 @@
     <item component="ComponentInfo{com.microsoft.office.outlook/com.microsoft.office.outlook.activities.HubActivity}" drawable="outlook" />
 
     <item component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.MapsActivity}" drawable="maps" />
+
+    <!-- NAB: the launcher alias is registered without the package prefix; both forms included -->
+    <item component="ComponentInfo{au.com.nab.mobile/LauncherActivityAlias.Default}" drawable="nab" />
+    <item component="ComponentInfo{au.com.nab.mobile/au.com.nab.mobile.LauncherActivityAlias.Default}" drawable="nab" />
+
     <item component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}" drawable="photos" />
 
     <item component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube" />
