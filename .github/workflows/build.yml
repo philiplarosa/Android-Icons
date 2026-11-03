@@ -18,6 +18,15 @@ jobs:
           distribution: temurin
           java-version: 17
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Turn artwork in art/ into icons
+        run: |
+          pip install pillow
+          ./tools/import_all.sh
+
       - name: Build
         run: ./gradlew --no-daemon assembleRelease -PversionCode=${{ github.run_number }}
 

@@ -16,7 +16,9 @@
 
     <!-- Messages: Google, Samsung, AOSP -->
     <item component="ComponentInfo{com.google.android.apps.messaging/com.google.android.apps.messaging.ui.ConversationListActivity}" drawable="messages" />
+    <item component="ComponentInfo{com.google.android.apps.messaging/com.google.android.apps.messaging.main.MainActivity}" drawable="messages" />
     <item component="ComponentInfo{com.samsung.android.messaging/com.android.mms.ui.ConversationComposer}" drawable="messages" />
+    <item component="ComponentInfo{com.samsung.android.messaging/com.samsung.android.messaging.ui.ConversationListActivity}" drawable="messages" />
     <item component="ComponentInfo{com.android.messaging/com.android.messaging.ui.conversationlist.ConversationListActivity}" drawable="messages" />
 
     <!-- Camera: Pixel, Samsung, AOSP -->
@@ -26,12 +28,25 @@
 
     <item component="ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}" drawable="chrome" />
     <item component="ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGmail}" drawable="gmail" />
+
+    <!-- Outlook: regular, education, hub -->
+    <item component="ComponentInfo{com.microsoft.office.outlook/com.microsoft.office.outlook.MainActivity}" drawable="outlook" />
+    <item component="ComponentInfo{com.microsoft.office.outlook/com.microsoft.office.outlook.MainActivityEdu}" drawable="outlook" />
+    <item component="ComponentInfo{com.microsoft.office.outlook/com.microsoft.office.outlook.activities.HubActivity}" drawable="outlook" />
+
     <item component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.MapsActivity}" drawable="maps" />
     <item component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}" drawable="photos" />
 
     <item component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube" />
-    <item component="ComponentInfo{com.google.android.youtube/com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity}" drawable="youtube" />
 
+    <!-- Spotify -->
     <item component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivity}" drawable="spotify" />
+    <item component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivityAlias}" drawable="spotify" />
+    <item component="ComponentInfo{com.spotify.music/com.spotify.music.main.MainScreenActivity}" drawable="spotify" />
+
+    <!-- WhatsApp -->
+    <item component="ComponentInfo{com.whatsapp/com.whatsapp.Main}" drawable="whatsapp" />
+    <item component="ComponentInfo{com.whatsapp/com.whatsapp.HomeActivity}" drawable="whatsapp" />
+
     <item component="ComponentInfo{com.android.settings/com.android.settings.Settings}" drawable="settings" />
 </resources>
