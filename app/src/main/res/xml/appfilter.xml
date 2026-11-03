@@ -50,6 +50,8 @@
     <item component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivityAlias}" drawable="spotify" />
     <item component="ComponentInfo{com.spotify.music/com.spotify.music.main.MainScreenActivity}" drawable="spotify" />
 
+    <item component="ComponentInfo{com.ubnt.unifi.protect/com.ubnt.sections.splash.AuthenticationActivity}" drawable="unifi_protect" />
+
     <!-- WhatsApp -->
     <item component="ComponentInfo{com.whatsapp/com.whatsapp.Main}" drawable="whatsapp" />
     <item component="ComponentInfo{com.whatsapp/com.whatsapp.HomeActivity}" drawable="whatsapp" />

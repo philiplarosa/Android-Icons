@@ -21,6 +21,7 @@
     <item drawable="youtube" name="YouTube" />
     <item drawable="spotify" name="Spotify" />
     <item drawable="unifi_access" name="UniFi Access" />
+    <item drawable="unifi_protect" name="UniFi Protect" />
     <item drawable="whatsapp" name="WhatsApp" />
     <item drawable="settings" name="Settings" />
 </resources>
