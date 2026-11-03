@@ -86,6 +86,8 @@ def main():
     ap.add_argument("--size", type=float, default=26, help="artwork radius in units (default 26)")
     ap.add_argument("--mono", choices=["ink", "shade"], default="ink",
                     help="how to build the themed-icon layer (default ink)")
+    ap.add_argument("--height", type=float, default=1.0,
+                    help="stretch the art vertically by this factor, e.g. 1.1 if it looks too wide")
     ap.add_argument("--center", choices=["box", "circle"], default="box",
                     help="box: centre of the bounding box. circle: centre of the smallest circle "
                          "around the art, which suits stars and other pointy shapes")
@@ -105,6 +107,10 @@ def main():
     d = ink(src, bg)
     noise = d.point(lambda v: 255 if v < 14 else 0)
     src = Image.composite(Image.new("RGB", src.size, bg), src, noise)
+
+    if args.height != 1.0:
+        src = src.resize((w, round(h * args.height)), Image.LANCZOS)
+        w, h = src.size
 
     # Find the artwork (ignores soft drop shadows), its centre and its true radius.
     mask = ink(src, bg).point(lambda v: 255 if v > 60 else 0).filter(ImageFilter.MinFilter(3))

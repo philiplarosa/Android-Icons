@@ -22,9 +22,9 @@ Open the Android Icons app to see which icons match an app on your phone (✓ me
 
 ## Included icons
 
-Phone, Messages, Camera, Chrome, Gmail, Outlook, Maps, NAB, Photos, YouTube, Settings, Spotify, WhatsApp.
+Phone, Messages, Camera, Chrome, Claude, Gmail, Outlook, Maps, NAB, Photos, YouTube, Settings, Spotify, WhatsApp.
 
-Spotify, Outlook, WhatsApp and NAB come from artwork in `art/`. The rest are vector glyphs.
+Spotify, Outlook, WhatsApp, NAB and Claude come from artwork in `art/`. The rest are vector glyphs.
 
 `appfilter.xml` covers the Google, Samsung and stock Android versions of Phone, Messages and Camera. If an icon shows "No matching app found" in the app, your phone uses a different component name. You can still pick that icon manually, or add the right line (see below).
 
@@ -46,7 +46,7 @@ All of it lives in `app/src/main/res/`:
 3. Add `<item drawable="<name>" name="Label" />` to `xml/drawable.xml`.
 4. In the Android Icons app, scroll to **Installed apps** and tap the app you want. That copies its `appfilter.xml` line. Paste it into `xml/appfilter.xml` and set `drawable` to your icon's name.
 
-**From artwork (PNG or JPG):** put the image in `art/`, add a line for it to `tools/import_all.sh` and run that script (needs Python with Pillow: `pip install pillow`). It centres and sizes the artwork, uses the image's background colour as the icon background, and makes the themed-icon version. Then do steps 3 and 4. Art on a plain background with some empty space around it works best. Change `--size` on that line if an icon looks too big or too small next to the others. For stars and other pointy shapes, add `--center circle` so the points sit evenly around the middle.
+**From artwork (PNG or JPG):** put the image in `art/`, add a line for it to `tools/import_all.sh` and run that script (needs Python with Pillow: `pip install pillow`). It centres and sizes the artwork, uses the image's background colour as the icon background, and makes the themed-icon version. Then do steps 3 and 4. Art on a plain background with some empty space around it works best. Change `--size` on that line if an icon looks too big or too small next to the others. For stars and other pointy shapes, add `--center circle` so the points sit evenly around the middle. If art looks too wide, add `--height 1.1` to make it taller.
 
 You can do all of this in the GitHub web editor from your phone, including artwork: GitHub runs `tools/import_all.sh` before every build, so you only need to upload the image and edit the text files. Commit, wait for the build to finish (about 3 minutes), then install the new release.
 

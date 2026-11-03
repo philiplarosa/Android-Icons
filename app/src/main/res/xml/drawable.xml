@@ -11,6 +11,7 @@
     <item drawable="messages" name="Messages" />
     <item drawable="camera" name="Camera" />
     <item drawable="chrome" name="Chrome" />
+    <item drawable="claude" name="Claude" />
     <item drawable="gmail" name="Gmail" />
     <item drawable="outlook" name="Outlook" />
     <item drawable="maps" name="Maps" />
