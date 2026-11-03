@@ -20,6 +20,8 @@ Every push to this repo builds a new release. Newer builds install over older on
 
 Open the Android Icons app to see which icons match an app on your phone (✓ means it auto-applies).
 
+**After installing an update**, Lawnchair keeps showing the old icon list until it restarts (it caches each icon pack for as long as it's running). Force stop Lawnchair: in the Android Icons app tap **Open launcher app info**, then **Force stop**, then go back to your home screen. Restarting the phone also works.
+
 ## Included icons
 
 Phone, Messages, Camera, Chrome, Claude, Gmail, Outlook, Maps, NAB, Photos, RENOHO Health, Samply, YouTube, Settings, Spotify, UniFi Access, UniFi Protect, WhatsApp.

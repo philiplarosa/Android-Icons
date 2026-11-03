@@ -14,9 +14,12 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.TypedValue;
 import android.view.Gravity;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -93,7 +96,14 @@ public class MainActivity extends Activity {
                 android.R.style.TextAppearance_Material_Body1, dp(8));
         addText(how, "One app at a time: long-press the app on your home screen, tap the edit "
                         + "(pencil) option, tap its icon, choose Android Icons and pick any icon.",
-                android.R.style.TextAppearance_Material_Body1, 0);
+                android.R.style.TextAppearance_Material_Body1, dp(8));
+        addText(how, "Updated this app? Lawnchair keeps showing the old icon list until it "
+                        + "restarts. Tap below, then Force stop, then go back to your home screen.",
+                android.R.style.TextAppearance_Material_Body1, dp(8));
+        Button restart = new Button(this);
+        restart.setText("Open launcher app info");
+        restart.setOnClickListener(v -> openLauncherInfo());
+        how.addView(restart);
 
         final TextView loading = addText(content, "Loading…",
                 android.R.style.TextAppearance_Material_Body1, 0);
@@ -217,6 +227,22 @@ public class MainActivity extends Activity {
     private Drawable packDrawable(String name) {
         int id = getResources().getIdentifier(name, "drawable", getPackageName());
         return id != 0 ? getDrawable(id) : null;
+    }
+
+    /**
+     * Lawnchair caches each icon pack for as long as its process lives, so after
+     * this app updates it needs a force stop to pick up new icons.
+     */
+    private void openLauncherInfo() {
+        Intent home = new Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_HOME);
+        ResolveInfo ri = getPackageManager().resolveActivity(home, PackageManager.MATCH_DEFAULT_ONLY);
+        String pkg = ri != null && ri.activityInfo != null ? ri.activityInfo.packageName : null;
+        if (pkg == null || "android".equals(pkg)) {
+            Toast.makeText(this, "Couldn't find your default launcher", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        startActivity(new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                Uri.fromParts("package", pkg, null)));
     }
 
     private void copy(String text) {
