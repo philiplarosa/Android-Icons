@@ -91,6 +91,8 @@ def main():
     ap.add_argument("--center", choices=["box", "circle"], default="box",
                     help="box: centre of the bounding box. circle: centre of the smallest circle "
                          "around the art, which suits stars and other pointy shapes")
+    ap.add_argument("--shift", type=float, nargs=2, default=(0.0, 0.0), metavar=("X", "Y"),
+                    help="nudge the art by X,Y units (right/down positive) to centre it by eye")
     args = ap.parse_args()
 
     src = Image.open(args.image).convert("RGB")
@@ -129,7 +131,8 @@ def main():
     scale = args.size * PX_PER_UNIT / radius
     art = src.resize((round(w * scale), round(h * scale)), Image.LANCZOS)
     fg = Image.new("RGB", (CANVAS, CANVAS), bg)
-    fg.paste(art, (round(CANVAS / 2 - cx * scale), round(CANVAS / 2 - cy * scale)))
+    fg.paste(art, (round(CANVAS / 2 - cx * scale + args.shift[0] * PX_PER_UNIT),
+                   round(CANVAS / 2 - cy * scale + args.shift[1] * PX_PER_UNIT)))
 
     # Monochrome (Android themed icons).
     #   ink:   anything clearly not background is solid. Good for outline/line art.
