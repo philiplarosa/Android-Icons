@@ -87,7 +87,7 @@ def main():
     ap.add_argument("--mono", choices=["ink", "shade"], default="ink",
                     help="how to build the themed-icon layer (default ink)")
     ap.add_argument("--height", type=float, default=1.0,
-                    help="stretch the art vertically by this factor, e.g. 1.1 if it looks too wide")
+                    help="scale the art vertically, e.g. 0.85 if it looks too tall or 1.1 if too wide")
     ap.add_argument("--center", choices=["box", "circle"], default="box",
                     help="box: centre of the bounding box. circle: centre of the smallest circle "
                          "around the art, which suits stars and other pointy shapes")
