@@ -18,6 +18,7 @@
     <item drawable="nab" name="NAB" />
     <item drawable="photos" name="Photos" />
     <item drawable="renoho" name="RENOHO Health" />
+    <item drawable="samply" name="Samply" />
     <item drawable="youtube" name="YouTube" />
     <item drawable="spotify" name="Spotify" />
     <item drawable="unifi_access" name="UniFi Access" />
