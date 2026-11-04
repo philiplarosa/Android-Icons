@@ -10,6 +10,7 @@
     <item drawable="phone" name="Phone" />
     <item drawable="messages" name="Messages" />
     <item drawable="camera" name="Camera" />
+    <item drawable="canary" name="Canary" />
     <item drawable="chrome" name="Chrome" />
     <item drawable="claude" name="Claude" />
     <item drawable="gmail" name="Gmail" />
@@ -21,6 +22,7 @@
     <item drawable="samply" name="Samply" />
     <item drawable="youtube" name="YouTube" />
     <item drawable="spotify" name="Spotify" />
+    <item drawable="tbfc" name="TBFC" />
     <item drawable="unifi_access" name="UniFi Access" />
     <item drawable="unifi_protect" name="UniFi Protect" />
     <item drawable="whatsapp" name="WhatsApp" />

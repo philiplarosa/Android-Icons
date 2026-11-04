@@ -16,3 +16,5 @@ python3 tools/import_art.py art/renoho.jpg   renoho   --size 29
 python3 tools/import_art.py art/unifi_access.jpg unifi_access --size 27 --shift 0 -1
 python3 tools/import_art.py art/unifi_protect.jpg unifi_protect --size 30 --shift 1.7 1
 python3 tools/import_art.py art/samply.jpg     samply   --size 24
+python3 tools/import_art.py art/canary.jpg     canary   --size 23
+python3 tools/import_art.py art/tbfc.jpg       tbfc     --size 25
